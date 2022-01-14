@@ -1,0 +1,44 @@
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
+body{
+    font-family: 'Poppins';
+}
+header{
+    background-color: rgb(134, 238, 207);
+}
+nav{
+    display: flex;
+
+}
+.menu ul{
+    display: flex;
+}
+.menu ul li{
+    list-style: none;
+    margin-left: 10px;
+}
+.menu ul li a{
+    text-decoration: none;
+}
+
+ /* first section design  */
+ .addbox{
+     margin-top:5%;
+     display: flex;
+     align-items: center;
+ }
+ .addbox:hover .image img{
+     transform: rotate(60deg);
+     transition:2s;
+ }
+ .into-part{
+     width:50%;
+     margin-left: 10%;
+ }
+ .image{
+     width:50%;
+ }
+ .image img{
+     width:50%;
+     background-image: url(images/Circle\ design.svg);
+     background-size: cover;
+ }
