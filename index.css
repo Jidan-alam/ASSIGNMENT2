@@ -34,6 +34,14 @@ nav{
      width:50%;
      margin-left: 10%;
  }
+ .global-btn{
+     padding:10px 24px;
+     background: #E02C6D;
+     border-radius: 40px;
+     color:white;
+     font-weight: 700;
+     border:none;
+ }
  .image{
      width:50%;
  }
