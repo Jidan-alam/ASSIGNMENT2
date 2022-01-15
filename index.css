@@ -236,16 +236,24 @@ footer{
     .product-container{
         width:100%;
     }
+    .product-container h4{
+        text-align: center;
+    }
       .product-items{
           display: grid;
           grid-template-columns: repeat(1, 1fr);
+      }
+      .product-image{
+          margin:10px;
       }
       /* extra product item  */
      .others-product-container{
           width:100%;
       }
       .others-product-container h1{
-          font-size: 20px;
+          text-align: center;
+          font-size: 15px;
+          margin-left: 10px;
       }
       .others-product{
           display: grid;
@@ -253,6 +261,7 @@ footer{
       }
       /* footer responsive  */
       .footer{
+          text-align: center;
           width:100%;
       } 
 }
