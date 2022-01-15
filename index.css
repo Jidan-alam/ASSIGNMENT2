@@ -1,6 +1,11 @@
     @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
 body{
     font-family: 'Poppins';
+    padding:0;
+    margin:0;
+}
+section{
+    margin-bottom: 80px;
 }
 main{
     display:flex;
@@ -25,16 +30,15 @@ nav{
     text-decoration: none;
 }
 
- /* first section design  */
+ /* camer section design  */
  .addbox{
      margin:5% 0;
      display: flex;
      align-items: center;
  }
  .addbox:hover .image img{
-     transform: rotate(60deg);
-     transition:2s;
- }
+     transform: rotate(260deg);
+}
  .into-part{
      width:50%;
      margin-left: 10%;
@@ -59,21 +63,22 @@ nav{
      width:50%;
  }
  .image img{
-     width:60%;
+     width:70%;
      margin-left: 20%;
      background-image: url(images/Circle\ design.svg);
      background-size: cover;
+     transition-duration:4s;
+     transition-timing-function: case-in;
  }
 
  /* logo box design start  */
  .logo-box{
      display: flex;
      justify-content:center;
-     margin-bottom: 100px;
  }
  .logo{
      display:flex;
-     border:2px solid;
+     border:2px solid ;
      width:1110px;
      justify-content: center;
  }
@@ -84,13 +89,10 @@ nav{
  /* section three design */
 
  .product-container{
-    width:1300px;
-    margin-bottom: 100px;
-    
+    width:1300px; 
 }
  .product-container h2{
     text-align: center;
-    
 }
 .product-items{
     display: grid;
@@ -105,7 +107,6 @@ nav{
 .product-image h3{
     font-size: 28px;
     color: #18191F;
-
 }
 .product-image .font-size{
     font-size: 24px;
@@ -120,4 +121,17 @@ nav{
 .star-icon .filled{
     color:tomato;
 }
+.star-icon span{
+    margin-left: 5px;
+}
 /* four section start  */
+.footer{
+    text-align: center;
+    background-color: rgb(10, 8, 38);
+    color: #FFFFFF;
+    padding:30px;
+}
+.icon .fab{
+    padding:10px;
+    color:#FFFFFF;
+}
