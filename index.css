@@ -72,15 +72,14 @@ nav{
  }
 
  /* logo box design start  */
- .logo-box{
-     display: flex;
-     justify-content:center;
- }
  .logo{
      display:flex;
-     border:2px solid ;
-     width:1110px;
      justify-content: center;
+     border-width: 1px 0 1px 0;
+     border-style: solid;
+     border-color:rgba(219, 214, 214, 0.705);
+     width:1110px;
+
  }
  .logo-pic{
      padding:20px 30px;
@@ -108,6 +107,16 @@ nav{
     font-size: 28px;
     color: #18191F;
 }
+.product-container a{
+    text-decoration: none;
+    color:#E02C6D;
+    font-size: 20px;
+}
+.product-container h4{
+    text-align: right;
+    
+
+}
 .product-image .font-size{
     font-size: 24px;
 }
@@ -125,6 +134,21 @@ nav{
     margin-left: 5px;
 }
 /* four section start  */
+.others-product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.others img{
+    margin-top:15px;
+    border-radius: 20px;
+}
+.others:hover img {
+    transform: scale(1.2);
+    transition:transform,2s;
+    
+}
+/* footer part design  */
 .footer{
     text-align: center;
     background-color: rgb(10, 8, 38);
