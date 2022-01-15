@@ -22,7 +22,7 @@ nav{
 
  /* first section design  */
  .addbox{
-     margin-top:5%;
+     margin:5% 0;
      display: flex;
      align-items: center;
  }
@@ -34,6 +34,10 @@ nav{
      width:50%;
      margin-left: 10%;
  }
+ .into-part h1{
+     color: #3A3A3A;
+     font-size: 52px;
+ }
  .global-btn{
      padding:10px 24px;
      background: #E02C6D;
@@ -41,12 +45,33 @@ nav{
      color:white;
      font-weight: 700;
      border:none;
+     margin-top: 20px;
+ }
+ .arrow-btn{
+     margin-left: 5px;
  }
  .image{
      width:50%;
  }
  .image img{
-     width:50%;
+     width:60%;
+     margin-left: 20%;
      background-image: url(images/Circle\ design.svg);
      background-size: cover;
+ }
+
+ /* logo box design start  */
+ .logo-box{
+     display: flex;
+     justify-content:center;
+     margin-bottom: 100px;
+ }
+ .logo{
+     display:flex;
+     border:2px solid;
+     width:1110px;
+     justify-content: center;
+ }
+ .logo-pic{
+     padding:20px 30px;
  }
