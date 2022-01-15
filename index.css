@@ -81,11 +81,11 @@ nav{
  /* logo box design start  */
  .logo{
      display:flex;
-     justify-content: center;
+     flex-wrap: wrap;
+     align-items: center;
      border-width: 1px 0 1px 0;
      border-style: solid;
      border-color:rgba(219, 214, 214, 0.705);
-     width:1110px;
  }
  .logo-pic{
      padding:20px 30px;
@@ -163,18 +163,25 @@ nav{
     transition:.5s;
 }
 /* footer part design  */
-.footer{
+footer{
     text-align: center;
     background-color: rgb(10, 8, 38);
     color: #FFFFFF;
     padding:30px;
+    width:100%;
 }
 .icon .fab{
     padding:10px;
     color:#FFFFFF;
 }
 /* for responsive design  */
-@media only screen and (max-width:500px) {
+@media only screen and (max-width:490px) {
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }    
+
     nav{
         
     }
@@ -190,13 +197,25 @@ nav{
         grid-template-columns: repeat(1, 1fr);
     }
     .image{
-      
+      width:100%;
     }
     .into-part h1{
         font-size: 25px;
         
     }
     /* logo part design  */
+    .logo-box{
+       width:100%;
+    }
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:none;
+    }
+    .logo-pic{
+        padding:10px
+    }
     /* product design  */
     .product-container{
         width:100%;
@@ -209,8 +228,15 @@ nav{
       .others-product-container{
           width:100%;
       }
+      .others-product-container h1{
+          font-size: 20px;
+      }
       .others-product{
           display: grid;
           grid-template-columns: repeat(1, 1fr);
+      }
+      /* footer responsive  */
+      .footer{
+          width:100%;
       }
 }
