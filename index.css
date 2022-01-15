@@ -1,7 +1,8 @@
-    @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
 body{
     font-family: 'Poppins';
-
+    margin:0;
+    padding:0;
 }
 section{
     margin-bottom: 80px;
@@ -91,7 +92,6 @@ nav{
      padding:10px 20px;
  }
  /* section three design */
-
  .product-container h2{
     text-align: center;
 }
@@ -176,7 +176,7 @@ nav{
     padding:10px;
     color:#FFFFFF;
 }
-/* for responsive design  */
+/* for modile responsive design  */
 @media only screen and (max-width:490px) {
     .name{
         width:100%;
@@ -185,7 +185,6 @@ nav{
     .menu{
        display: none;
     }
-    /* Intro part  */
    .addbox{
         display: flex;
         flex-direction: column-reverse;
@@ -203,13 +202,8 @@ nav{
     .into-part p{
         font-size: 15px;
     }
-    /*  logo part design  */
-    .logo-box{
-        
-    }
-
-    /* product design  */
     .product-container{
+        width: 100%;
     }
     .product-container h4{
         text-align: center;
@@ -218,22 +212,51 @@ nav{
           display: grid;
           grid-template-columns: repeat(1, 1fr);
       }
-      .product-image{
-
-      }
-      /* extra product item  */
      .others-product-container{
-        
+        width:100%;
       }
       .others-product-container h1{
           text-align: center;
           font-size: 20px;
-
       }
       .others-product{
           overflow: hidden;
           display: grid;
           grid-template-columns: repeat(1, 1fr);
       }
-      /* footer responsive  */
+}
+/* for tab responsive design  */
+@media only screen and (min-width: 481px) and (max-width: 968px) {
+   .addbox{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .image{
+    margin-top: 20px;
+    }
+    .into-part h1{
+        font-size: 20px;
+    } 
+    .into-part p{
+        font-size: 15px;
+    }
+    .product-container{
+        width:100%;
+    }
+      .product-items{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+      }
+     .others-product-container{
+        width:100%;
+      }
+      .others-product-container h1{
+          text-align: center;
+          font-size: 20px;
+      }
+      .others-product{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+      }
 }
