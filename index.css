@@ -141,6 +141,9 @@ nav{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
 }
+.others{
+    text-align: center;
+}
 .others img{
     margin-top:15px;
     border-radius: 20px;
@@ -148,6 +151,12 @@ nav{
 .others:hover img {
     transform: scale(1.2);
     transition:transform,2s;
+}
+.button:hover{
+    background-color: rgba(231, 247, 208, 0.774);
+    color:black;
+    transition:.5s;
+
 }
 /* footer part design  */
 .footer{
